@@ -11,10 +11,22 @@ public class RuneController : MonoBehaviour {
         id = Random.Range(0, 3);
         if (id == 0)
         {
-            this.gameObject.AddComponent<Rune>();
+            this.gameObject.AddComponent<IceRune>();
+            this.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.cyan);
         }
-        else {
+        else if (id == 1)
+        {
             this.gameObject.AddComponent<ElectricRune>();
+            this.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.magenta);
+        }
+        else if (id == 2)
+        {
+            this.gameObject.AddComponent<FireRune>();
+            this.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+        }
+        else if (id == 3) {
+            this.gameObject.AddComponent<NatureRune>();
+            this.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.green);
         }
     }
 }

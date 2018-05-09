@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 0.78
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 13d3e495467bad540ad6e595b997e03b, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.22510481, g: 0.25166202, b: 0.32264084, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 25373240}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad4945268128f9d48affa4ad24f4f1e3, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a48d6d9efff1a04180e7d5bbcb27fbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
@@ -158,7 +158,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4fb004bcdc09ad7488f7de7c45dbc81e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -284,7 +284,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 391117961}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 321465b3cc721b4428bf9203121ae108, type: 3}
+  m_Script: {fileID: 11500000, guid: cf83a57215144664995a5d92ece5815d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &563750755
@@ -349,7 +349,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: dcb09e8fed62c7a4e9674228466a1ce7, type: 2}
+  - {fileID: 2100000, guid: fc4635015f28ce7498fe5f9141fbc653, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -410,7 +410,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 563750755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a025f521d1fa8a8498ae0c528e30b4a6, type: 3}
+  m_Script: {fileID: 11500000, guid: 3339b7c2c6392374d84e60c2ebc9f14d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentRune: {fileID: 0}
@@ -456,7 +456,7 @@ Camera:
   m_GameObject: {fileID: 1451967045}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -491,7 +491,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1451967045}
   m_LocalRotation: {x: 0.46174863, y: 0, z: 0, w: 0.8870109}
-  m_LocalPosition: {x: 0, y: 15, z: -10}
+  m_LocalPosition: {x: 0, y: 15, z: -19.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -504,7 +504,7 @@ Skybox:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1451967045}
   m_Enabled: 1
-  m_CustomSkybox: {fileID: 2100000, guid: 2869c66e822baa941bb52b0e6ec3dfdf, type: 2}
+  m_CustomSkybox: {fileID: 2100000, guid: 13d3e495467bad540ad6e595b997e03b, type: 2}
 --- !u!114 &1451967051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -513,7 +513,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1451967045}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15759765ba9d3d246bcb2607a10eaf6f, type: 3}
+  m_Script: {fileID: 11500000, guid: efd33dfdfdf1b4145ac0dbf07af2b54c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 563750755}
@@ -704,7 +704,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c178e5b043a520240a2bd092302059dd, type: 2}
+  - {fileID: 2100000, guid: b2c47de0f2c78284695272b71bbd4640, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -1,0 +1,12 @@
+--------------------------Temp TODO-----------------------------
+-Create 3 more runes +++++++++++++++++++++++
+-Color code runes to identify which are which 
+-Particles for each rune
+-Spawn particles
+-Enemy spawning
+-Score
+-Clean up code
+-Add models for everything
+-Add GUI
+-Rendering/Post-Processing stuff
+-Main menu
