@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.22510481, g: 0.25166202, b: 0.32264084, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -113,98 +113,45 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &25373240
+--- !u!1 &254485900
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 25373245}
-  - component: {fileID: 25373244}
-  - component: {fileID: 25373243}
-  - component: {fileID: 25373242}
-  - component: {fileID: 25373241}
+  - component: {fileID: 254485902}
+  - component: {fileID: 254485901}
   m_Layer: 0
-  m_Name: Rune
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &25373241
+--- !u!114 &254485901
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 25373240}
+  m_GameObject: {fileID: 254485900}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a48d6d9efff1a04180e7d5bbcb27fbb, type: 3}
+  m_Script: {fileID: 11500000, guid: 47a9afb594e61c241a72fb7229fb4468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
---- !u!23 &25373242
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 25373240}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 4fb004bcdc09ad7488f7de7c45dbc81e, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!65 &25373243
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 25373240}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &25373244
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 25373240}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &25373245
+  ground: {fileID: 1766419910}
+  rune: {fileID: 1673625277164608, guid: 0d005dee5b21cc84c9f608ee20df1f79, type: 2}
+  amountOfRunes: 10
+  amountOfEnemies: 0
+--- !u!4 &254485902
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 25373240}
+  m_GameObject: {fileID: 254485900}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.31, y: 0.5, z: 0}
+  m_LocalPosition: {x: -0.48876595, y: 0.49535072, z: -3.7694507}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -284,7 +231,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 391117961}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf83a57215144664995a5d92ece5815d, type: 3}
+  m_Script: {fileID: 11500000, guid: 321465b3cc721b4428bf9203121ae108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &563750755
@@ -349,7 +296,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: fc4635015f28ce7498fe5f9141fbc653, type: 2}
+  - {fileID: 2100000, guid: dcb09e8fed62c7a4e9674228466a1ce7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -410,7 +357,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 563750755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3339b7c2c6392374d84e60c2ebc9f14d, type: 3}
+  m_Script: {fileID: 11500000, guid: a025f521d1fa8a8498ae0c528e30b4a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentRune: {fileID: 0}
@@ -504,7 +451,7 @@ Skybox:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1451967045}
   m_Enabled: 1
-  m_CustomSkybox: {fileID: 2100000, guid: 13d3e495467bad540ad6e595b997e03b, type: 2}
+  m_CustomSkybox: {fileID: 2100000, guid: 31faf8360c0fcb54d9cda2cff7a7febc, type: 2}
 --- !u!114 &1451967051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -513,7 +460,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1451967045}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efd33dfdfdf1b4145ac0dbf07af2b54c, type: 3}
+  m_Script: {fileID: 11500000, guid: 15759765ba9d3d246bcb2607a10eaf6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 563750755}
@@ -704,7 +651,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: b2c47de0f2c78284695272b71bbd4640, type: 2}
+  - {fileID: 2100000, guid: c178e5b043a520240a2bd092302059dd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

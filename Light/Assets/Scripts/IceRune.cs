@@ -8,6 +8,11 @@ public class IceRune : Rune {
 
     private float speed = 15f;
 
+    private void Start()
+    {
+        IceAttack = Resources.Load("IceAttack") as GameObject;
+    }
+
     public override void Fire()
     {
         Debug.Log("Fire Electric Rune");
