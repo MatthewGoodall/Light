@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 65840599242280308}
   - component: {fileID: 23466749479631214}
   - component: {fileID: 54087046707954318}
-  - component: {fileID: 114606680870065506}
+  - component: {fileID: 114460936057734952}
   m_Layer: 0
   m_Name: NatureAttack
   m_TagString: Untagged
@@ -58,7 +58,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 041f8083590ec11438f48d2516dc6ea8, type: 2}
+  - {fileID: 2100000, guid: d9b9fe3cabd99b743b6f21e0ad56703c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -112,7 +112,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114606680870065506
+--- !u!114 &114460936057734952
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -120,6 +120,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1442238318083354}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5028b2061fc81e45b808477da82524e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6041abacfe3583747a19c76c9c9302eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
