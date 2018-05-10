@@ -8,11 +8,6 @@ public class NatureRune : Rune {
 
     private float speed = 15f;
 
-    private void Start()
-    {
-        NatureAttack = Resources.Load("NatureAttack") as GameObject;
-    }
-
     public override void Fire()
     {
         Debug.Log("Fire Electric Rune");
