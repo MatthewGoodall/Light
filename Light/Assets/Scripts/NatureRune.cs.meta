@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 05c36a61923b7d64ba2d94b891a9bddf
+timeCreated: 1525843578
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - NatureAttack: {fileID: 1442238318083354, guid: 242634762a11c094897208fb8d37c797,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

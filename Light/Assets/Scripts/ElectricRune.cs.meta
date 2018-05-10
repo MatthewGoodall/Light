@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e23cbd7cd9b9259428aaae67e7d2b45d
+timeCreated: 1525836800
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ElectricAttack: {fileID: 1328906440033906, guid: 3b1a276b4cc1c584f8199ad9bf82e0c9,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
