@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 65840599242280308}
   - component: {fileID: 23466749479631214}
   - component: {fileID: 54087046707954318}
-  - component: {fileID: 114460936057734952}
+  - component: {fileID: 114821940016635862}
   m_Layer: 0
   m_Name: NatureAttack
   m_TagString: Untagged
@@ -112,7 +112,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114460936057734952
+--- !u!114 &114821940016635862
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -120,6 +120,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1442238318083354}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6041abacfe3583747a19c76c9c9302eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a3603a829c1b7444946cf482059814c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

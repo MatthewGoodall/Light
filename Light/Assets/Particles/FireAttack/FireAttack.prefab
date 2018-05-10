@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 54764097517758822}
   - component: {fileID: 65687824692663614}
   - component: {fileID: 114122503709294612}
+  - component: {fileID: 114427881927209378}
   m_Layer: 0
   m_Name: FireAttack
   m_TagString: Untagged
@@ -121,5 +122,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6041abacfe3583747a19c76c9c9302eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114427881927209378
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1901648686463300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3603a829c1b7444946cf482059814c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
