@@ -37,8 +37,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4948071119667590}
   - component: {fileID: 54008360425005772}
-  - component: {fileID: 114209232755305540}
   - component: {fileID: 65826906708744672}
+  - component: {fileID: 114701406013450410}
   m_Layer: 0
   m_Name: Orb
   m_TagString: Untagged
@@ -162,7 +162,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114209232755305540
+--- !u!114 &114701406013450410
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1328906440033906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5028b2061fc81e45b808477da82524e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a3603a829c1b7444946cf482059814c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!198 &198684209877007392
@@ -10277,7 +10277,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: dfa5c1be9b35e5c45ae01fe3037212bf, type: 2}
+  - {fileID: 2100000, guid: 2383da12ce3472947b20e0fe5268c15a, type: 2}
   - {fileID: 2100000, guid: dfa5c1be9b35e5c45ae01fe3037212bf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -10331,7 +10331,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8b32135862f307a4faf6b2982eb7a43a, type: 2}
+  - {fileID: 2100000, guid: 364e013717dcee048a3b96f697805cef, type: 2}
   - {fileID: 2100000, guid: 8b32135862f307a4faf6b2982eb7a43a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -10385,7 +10385,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: c460bd74fdcd48c4187b55d7beae1182, type: 2}
+  - {fileID: 2100000, guid: 51c04417196d9084aae018bb54ed245f, type: 2}
   - {fileID: 2100000, guid: c460bd74fdcd48c4187b55d7beae1182, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0

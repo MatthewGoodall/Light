@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 65401653227425724}
   - component: {fileID: 23674697806034400}
   - component: {fileID: 54895026283875764}
-  - component: {fileID: 114172469931231710}
+  - component: {fileID: 114595862804541688}
   m_Layer: 0
   m_Name: IceAttack
   m_TagString: Untagged
@@ -58,7 +58,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 4aa440d4fa110b1429179cfbf9dd84ae, type: 2}
+  - {fileID: 2100000, guid: 5d480dfdcd2ce4a40afa3b0599dca7dc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -112,7 +112,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114172469931231710
+--- !u!114 &114595862804541688
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -120,6 +120,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1429420813300788}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5028b2061fc81e45b808477da82524e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a3603a829c1b7444946cf482059814c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

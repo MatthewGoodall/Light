@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -12,8 +13,10 @@ public class GameManager : MonoBehaviour {
     public TextMeshProUGUI timer;
     public Button startGame;
 
+    public GameObject[] enemies;
+
     private float currentTime = 30;
-    private float beginGame = 3;
+    private float beginGame = 4;
 
     public static bool gameStarted = false;
 
@@ -25,36 +28,32 @@ public class GameManager : MonoBehaviour {
 	void Start () {
         SpawnRunes();
         //SpawnEnemies();
-
+        enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        
     }
-	
-	// Update is called once per frame
-	void Update () {
-        if (gameStarted)
+
+    // Update is called once per frame
+    private void Update () {
+        if (!gameStarted) {
+            timer.text = Mathf.FloorToInt(beginGame).ToString();
+            beginGame -= Time.deltaTime;
+            Debug.Log(beginGame);
+            if (beginGame < 0)
+            {
+                gameStarted = true;
+            }
+        } else
         {
             timer.text = Mathf.FloorToInt(currentTime).ToString();
             currentTime -= Time.deltaTime;
         }
-        else {
-            
-            if (beginGame > 0)
-            {
-                timer.text = Mathf.FloorToInt(beginGame).ToString();
-                beginGame -= Time.deltaTime;
-            }
-            else
-            {
-                gameStarted = true;
-            }
-        }
-
     }
 
     private void SpawnRunes()
     {
         for(int i = 0; i < amountOfRunes; i++) {
-            float x = Random.Range(-60, 60);
-            float z = Random.Range(-60, 60);
+            float x = UnityEngine.Random.Range(-60, 60);
+            float z = UnityEngine.Random.Range(-60, 60);
             Vector3 runePosition = new Vector3(x, 1.5f, z);
             GameObject runeInstantiated = Instantiate<GameObject>(rune, runePosition, rune.transform.rotation);
             runeInstantiated.gameObject.transform.SetParent(ground.transform);
@@ -63,11 +62,12 @@ public class GameManager : MonoBehaviour {
 
     private void SpawnEnemies() {
         for(int i = 0; i < amountOfEnemies; i++) {
-            float x = Random.Range(-60, 60);
-            float z = Random.Range(-60, 60);
+            float x = UnityEngine.Random.Range(-60, 60);
+            float z = UnityEngine.Random.Range(-60, 60);
             Vector3 enemyPosition = new Vector3(x, 1.5f, z);
             GameObject enemyInstantiated = Instantiate<GameObject>(rune, enemyPosition, rune.transform.rotation);
             enemyInstantiated.gameObject.transform.SetParent(ground.transform);
+            
         }
     }
 }

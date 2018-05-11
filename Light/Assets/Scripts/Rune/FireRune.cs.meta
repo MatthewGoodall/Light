@@ -5,7 +5,9 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - FireAttack: {fileID: 1901648686463300, guid: 6a2e94b6ebe428547a3ff0ab439dac0d,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

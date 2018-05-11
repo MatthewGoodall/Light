@@ -12,21 +12,27 @@ public class RuneController : MonoBehaviour {
         if (id == 0)
         {
             this.gameObject.AddComponent<IceRune>();
-            this.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.cyan);
+            Light light = this.gameObject.GetComponent<Light>();
+            light.color = new Color(0, 0, 1, 1);
+            
         }
         else if (id == 1)
         {
             this.gameObject.AddComponent<ElectricRune>();
-            this.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.magenta);
+            Light light = this.gameObject.GetComponent<Light>();
+            light.color = new Color(1, 0, 1, 1);
         }
         else if (id == 2)
         {
             this.gameObject.AddComponent<FireRune>();
-            this.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+            Light light = this.gameObject.GetComponent<Light>();
+            light.color = new Color(1, 0, 0, 1);
         }
         else if (id == 3) {
             this.gameObject.AddComponent<NatureRune>();
-            this.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.green);
+            Light light = this.gameObject.GetComponent<Light>();
+            light.color = new Color(0, 1, 0, 1);
         }
+
     }
 }
