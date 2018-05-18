@@ -17,6 +17,8 @@ public class Rune : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Player") {
             collision.gameObject.GetComponent<PlayerMotor>().currentRune = this;
+            collision.gameObject.GetComponent<PlayerMotor>().runeTime = 10f;
+            GameManager.runeSlider.maxValue = collision.gameObject.GetComponent<PlayerMotor>().runeTime;
             this.gameObject.transform.SetParent(collision.gameObject.transform);
             this.gameObject.SetActive(false);
         }
@@ -24,5 +26,9 @@ public class Rune : MonoBehaviour {
 
     public virtual void Fire() {
         Debug.Log("Fire Rune");
+    }
+
+    public virtual int getDamage() {
+        return -1;
     }
 }

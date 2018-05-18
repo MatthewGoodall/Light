@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class PlayerMotor : MonoBehaviour {
 
-    private Rigidbody rb;
+    //private Rigidbody rb;
 
     private float speed = 10f;
+
+    [HideInInspector]
+    public float runeTime = 5f;
 
     public Rune currentRune;
 
 
     // Use this for initialization
     void Start () {
-        rb = GetComponent<Rigidbody>();
+        //rb = GetComponent<Rigidbody>();
     }
 	
 	// Update is called once per frame
@@ -40,10 +43,21 @@ public class PlayerMotor : MonoBehaviour {
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, speed * Time.deltaTime);
             }
 
-            if (Input.GetMouseButtonDown(0))
+            if (runeTime >= 0.1)
             {
-                currentRune.Fire();
+                runeTime -= Time.deltaTime;
+                GameManager.runeSlider.value = runeTime;
+                if (Input.GetMouseButtonDown(0) && currentRune != null)
+                { 
+                    currentRune.Fire();
+                }
             }
+            else {
+                gameObject.transform.GetChild(1).gameObject.SetActive(true);
+                Destroy(gameObject.transform.GetChild(1).gameObject);
+                currentRune = null;
+            }
+            
         }
     }
 

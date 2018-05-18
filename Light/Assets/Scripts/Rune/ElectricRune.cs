@@ -7,6 +7,7 @@ public class ElectricRune : Rune {
     public GameObject ElectricAttack;
 
     private float speed = 15f;
+    private int damage = 5;
 
     private void Start()
     {
@@ -18,5 +19,8 @@ public class ElectricRune : Rune {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         GameObject FiredProjectile = Instantiate<GameObject>(ElectricAttack, player.transform.position, player.transform.rotation);
         FiredProjectile.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * speed, ForceMode.Impulse);
+        FiredProjectile.GetComponent<RuneAttack>().damage = damage;
     }
+
+    
 }

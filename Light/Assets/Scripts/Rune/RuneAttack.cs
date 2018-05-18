@@ -6,6 +6,8 @@ public class RuneAttack : MonoBehaviour {
 
     private float timeInstantiated;
 
+    public int damage;
+
 	// Use this for initialization
 	void Start () {
         timeInstantiated = Time.timeSinceLevelLoad;
@@ -19,4 +21,11 @@ public class RuneAttack : MonoBehaviour {
             Destroy(this.gameObject);
         }
 	}
+
+    public int getDamage()
+    {
+        return damage;
+    }
+    
 }
+

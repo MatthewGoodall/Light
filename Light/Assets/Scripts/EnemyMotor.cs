@@ -5,38 +5,45 @@ using UnityEngine;
 public class EnemyMotor : MonoBehaviour {
 
     public GameObject player;
-    private float moveSpeed = 15f;
+    public GameManager gameManager;
+    private float moveSpeed = 10f;
     private float rotationSpeed = 5f;
 
     private int health = 10;
+    private int score = 20;
 
 	// Use this for initialization
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        transform.rotation = Quaternion.Slerp(transform.rotation,
+        if (GameManager.gameStarted) {
+            transform.rotation = Quaternion.Slerp(transform.rotation,
      Quaternion.LookRotation(player.transform.position - transform.position), rotationSpeed * Time.deltaTime);
 
-        //move towards the player
-        transform.position += transform.forward * moveSpeed * Time.deltaTime;
+            //move towards the player
+            transform.position += transform.forward * moveSpeed * Time.deltaTime;
 
-        if (health <= 0) {
-            Destroy(this.gameObject);
+            if (health <= 0)
+            {
+                gameManager.IncreaseScore((int)(score * gameManager.currentMultiplier));
+                Destroy(this.gameObject);
+            }
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent<RuneAttack>()) {
-            TakeDamage();
+            TakeDamage(other.gameObject.GetComponent<RuneAttack>().getDamage());
             Destroy(other.gameObject);
         }
     }
 
-    private void TakeDamage() {
-        health -= 1;
+    private void TakeDamage(int damage) {
+        health -= damage;
     }
 }
